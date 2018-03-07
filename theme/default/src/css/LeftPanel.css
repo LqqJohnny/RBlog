@@ -1,0 +1,68 @@
+#leftPanel{
+  position: fixed;
+  left:0;
+  top: 0 ;
+  bottom:0;
+  width:20rem;
+  background-color: rgb(62, 134, 147);
+  box-sizing: border-box;
+  padding:4rem 2rem;
+}
+#usericon{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px 2px #FFF;
+}
+#usericon img{
+  width:100%;
+  height: 100%;
+}
+
+.menuList .list{
+  padding:0;
+  margin-top:3rem;
+}
+.menuList .menuItem{
+  height:2rem;
+  cursor: pointer;
+  position: relative;
+}
+.menuList .menuItem .icon{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1rem;
+  width:20px;
+  height:20px;
+}
+.menuList .menuItem a{
+  display: block;
+  line-height: 2rem;
+  color:#fff;
+  text-indent: 5rem;
+  font-size: 1rem;
+}
+.menuList .menuItem a:hover{
+  border-bottom:2px solid #fff;
+}
+/* hover 特效 */
+.menuList .menuItem:before{
+  content:"";
+  width:25px;height: 25px;
+  background: url(../img/arrow.png) 100% 100% no-repeat;
+  background-size: 100% 60%;
+  background-position: 0;
+  left: 130%;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  font-size: 125%;
+  line-height: 3.5;
+  color: #fff;
+  transition: all 0.3s;
+}
+.menuList .menuItem:hover:before{
+  left: 80%;
+}

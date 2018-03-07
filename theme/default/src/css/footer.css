@@ -1,0 +1,32 @@
+#footer{
+  width: 100%;
+  margin: 0 auto;
+  height: 7rem;
+  position: absolute;
+  bottom: 0;
+
+}
+.footer-links{
+    text-align: center;
+}
+.footer-links a{
+  height:32px;
+  width: 32px;
+  margin:0 1rem;
+}
+.footer-links a:hover{
+  border:none;
+}
+.footer-links .email{
+  background: url(../img/email.png)
+}
+.footer-links .github{
+  background: url(../img/github.png)
+}
+.footer-links .weibo{
+  background: url(../img/weibo.png)
+}
+#footer .footerText{
+  text-align: center;
+  font-size: 1rem;
+}
