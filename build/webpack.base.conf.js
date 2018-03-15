@@ -31,7 +31,7 @@ module.exports = {
     rules: [
       {
           test: /\.md$/,
-          loader:"html-loader!markdown-loader?pedantic=true"
+          loader:"babel-loader!markdown-it-react-loader"
       },
       {
         test: /\.css$/,

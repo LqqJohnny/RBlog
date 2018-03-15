@@ -1,0 +1,21 @@
+.articleDetail{
+  font-size:14px;
+  margin-bottom: 8rem;
+}
+.articleDetail h1,
+.articleDetail h2,
+.articleDetail h3,
+.articleDetail h4,
+.articleDetail h5,
+.articleDetail h6{
+  margin: 1.5rem  0 1rem 0 ;
+}
+.articleDetail p{
+  margin: 0.5rem 0;
+  line-height: 1.2rem;
+}
+
+.articleDetail .cow{
+  padding-left: 50%;
+  font-family: cursive;
+}

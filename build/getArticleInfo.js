@@ -43,7 +43,7 @@ function getHeader(data,path,filename,tags,cates){
   if(start===-1 || end===-1 || start===end){ // 没有文字信息头
     return {};
   }
-
+  var content = data.substring(end+3); //  正文内容
   var mdHead = data.substring(start+3,end);
 
   var headArr = mdHead.split(/\n/).filter(function(val){
@@ -65,19 +65,12 @@ function getHeader(data,path,filename,tags,cates){
 
     headJSON[key] = val;
   })
-  // 处理文件 没有则插入dleteAbove 标识
-  if(data.indexOf("<!-- deleteAbove -->")<0){
-    var newData = insertStr(data,end+3,"\r\n <!-- deleteAbove -->");
-    fs.writeFileSync(path ,newData);
-  }
+
+  headJSON.content = content;  //  加入正文
 
   return {headJSON,tags,cates};
 }
-//  在字符串的某个位置 插入 一段新字符串
-function insertStr(target,start,add){
-  var newStr = target.substring(0,start) + add +target.substring(start);
-  return newStr;
-}
+
 // 将类别或标签保存
 function  addTagsOrCates(key,val, filename,result){
   // val 可能为数组 ，先对 val 进行处理 无论个数 都转成 数组。
