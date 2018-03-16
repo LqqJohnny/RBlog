@@ -67,7 +67,9 @@ function getHeader(data,path,filename,tags,cates){
   })
 
   headJSON.content = content;  //  加入正文
-
+  if(!"categories" in headJSON || !headJSON.categories){
+    headJSON.categories ="未分类";
+  }
   return {headJSON,tags,cates};
 }
 

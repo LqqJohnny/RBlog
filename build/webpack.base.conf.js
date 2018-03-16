@@ -10,7 +10,6 @@ function resolve (dir) {
 console.log("选用主题："+ blogTheme);
 module.exports = {
   entry: {
-    // app: './src/main.js'
     app: './theme/'+blogTheme+'/src/index.js'
   },
   output: {

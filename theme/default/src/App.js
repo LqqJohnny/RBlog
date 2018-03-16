@@ -9,6 +9,8 @@ import LeftPanel from './components/LeftPanel';
 import ArticleList from './components/ArticleList';
 import ArticleDetail from './components/ArticleDetail';
 import Footer from './components/Footer';
+import Tags from './components/Tags.jsx';
+import Categories from './components/Categories.jsx';
 import 'normalize.css';
 
 import './css/reset.css';
@@ -25,11 +27,11 @@ class App extends Component {
 
         {/* 中间内容 */}
         <Router>
-            <div>
+            <div style={{'marginBottom':'8rem'}}>
                 <Route exact path="/" component={ArticleList}/>
                 <Route exact path="/detail/:id" component={ArticleDetail}/>
-                <Route exact path="/tags" component={ArticleDetail}/>
-                <Route exact path="/categories" component={ArticleDetail}/>
+                <Route exact path="/tags" component={Tags}/>
+                <Route exact path="/categories" component={Categories}/>
             </div>
         </Router>
 

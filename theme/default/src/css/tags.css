@@ -1,0 +1,38 @@
+#worldCloudCanvas{
+  width:80rem;
+  height:40rem;
+  border:1px solid #000;
+}
+#worldCloudCanvas span{
+  cursor: pointer;
+}
+#tagRelatedArt{
+  width:80rem;
+  margin-top:3rem;
+  padding: 2rem;
+}
+#tagRelatedArt .art_item a{
+  font-size: 14px;
+  text-decoration: none;
+  color: #2c8898;
+  font-size: 1.5rem;
+  padding-bottom: 0.4rem;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+#tagRelatedArt .art_item a:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #055f6f;
+    -webkit-transition: width .5s;
+    transition: width .5s;
+}
+#tagRelatedArt .art_item a:hover:before{
+  width:100%;
+}

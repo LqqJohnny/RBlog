@@ -22,7 +22,7 @@ class ArticleDetail extends React.Component{
 
     console.log(this.state.articleInfo);
     return (
-      <div className="articleDetail">
+      <div className="articleDetail"> 
           <ReactMarkdown source={this.state.articleInfo.content}></ReactMarkdown>
           <pre className="cow">
                                 &nbsp;&nbsp;(__)<br />
