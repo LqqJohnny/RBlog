@@ -20,6 +20,7 @@
   font-weight: bold;
   position: relative;
   cursor: pointer;
+  margin-left: 5rem;
 }
 #tagRelatedArt .art_item a:before {
     position: absolute;

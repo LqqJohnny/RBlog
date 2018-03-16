@@ -11,7 +11,7 @@ class Tags extends React.Component{
       this.state = {
         tagsJson : {},
         worldCloudJson : [],
-        selectTag:"js",
+        selectTag:"",
       }
     }
 
@@ -28,6 +28,7 @@ class Tags extends React.Component{
       var key = this.state.selectTag;
       var resultArr = [];
       if(key!=="" && key in tags){
+        resultArr.push(<blockquote key="block"><i>{this.state.selectTag}</i> 类型共有 {tags[key].length} 篇文章</blockquote>)
         for(var i in tags[key]){
           var value = tags[key][i].replace(/.md/,"");
 
