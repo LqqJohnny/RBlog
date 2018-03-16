@@ -51,14 +51,14 @@ class Tags extends React.Component{
           list: list,
           gridSize: 0 ,
           weightFactor: function (size) {
-            size = Math.max(size,4);
-            return Math.pow(size, 2.4);
+            size = Math.max(size,3);
+            return Math.pow(size, 2.8);
           },
           minSize:"20px",
           fontWeight:"bold",
           fontFamily: 'sans-serif, serif',
           color: 'random-dark',
-          backgroundColor: '#fff',
+          backgroundColor: '#F9F9F9',
           rotateRatio: 0,
           wait:50,
           shape:"star",

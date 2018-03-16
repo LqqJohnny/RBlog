@@ -19,3 +19,6 @@
   padding-left: 50%;
   font-family: cursive;
 }
+.articleDetail code{
+  font-size: 1rem;
+}

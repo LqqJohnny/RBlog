@@ -1,7 +1,6 @@
 #worldCloudCanvas{
   width:80rem;
-  height:40rem;
-  border:1px solid #000;
+  height:25rem;
 }
 #worldCloudCanvas span{
   cursor: pointer;
@@ -15,9 +14,8 @@
   font-size: 14px;
   text-decoration: none;
   color: #2c8898;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding-bottom: 0.4rem;
-  font-weight: bold;
   position: relative;
   cursor: pointer;
   margin-left: 5rem;

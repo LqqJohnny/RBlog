@@ -15,7 +15,7 @@ class ArticleList extends React.Component{
               <div className="articleInfo">
                 <span className="time">{val.date.slice(0,10)}</span>
                 <span className="category">{val.categories}</span>
-                <span className="tags">{val.tags}</span>
+                <span className="tags">{val.tags || "无标签"}</span>
               </div>
               <hr/>
             </div>

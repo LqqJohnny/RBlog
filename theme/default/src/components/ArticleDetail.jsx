@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactMarkdown  from 'react-markdown';
 import allArt from '../../../../articles.json';
+import Prism from 'prismjs'
 import '../css/articles.css'
 class ArticleDetail extends React.Component{
   constructor(){
@@ -10,6 +11,7 @@ class ArticleDetail extends React.Component{
     };
 
   }
+
   componentWillMount(){
     var id  = this.props.match.params.id;
     var targetArt = allArt.filter(function(val,i){
@@ -20,10 +22,9 @@ class ArticleDetail extends React.Component{
   }
   render(){
 
-    console.log(this.state.articleInfo);
     return (
-      <div className="articleDetail"> 
-          <ReactMarkdown source={this.state.articleInfo.content}></ReactMarkdown>
+      <div className="articleDetail">
+          <ReactMarkdown source={this.state.articleInfo.content} escapeHtml={false} ></ReactMarkdown>
           <pre className="cow">
                                 &nbsp;&nbsp;(__)<br />
                               /   oo      ______<br />
@@ -39,6 +40,15 @@ class ArticleDetail extends React.Component{
 
     )
   }
+
+  componentDidMount () {
+    Prism.highlightAll()
+  }
+
+  componentDidUpdate () {
+    Prism.highlightAll()
+  }
+
 }
 
 export default ArticleDetail;

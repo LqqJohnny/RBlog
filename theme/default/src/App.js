@@ -13,6 +13,10 @@ import Tags from './components/Tags.jsx';
 import Categories from './components/Categories.jsx';
 import 'normalize.css';
 
+import Prism from 'prismjs';
+import 'prismjs/components/prism-jsx';
+import 'prismjs/themes/prism-coy.css';
+
 import './css/reset.css';
 import './css/sakura.css';
 import './css/app.css';
