@@ -28,7 +28,7 @@ class Tags extends React.Component{
       var key = this.state.selectTag;
       var resultArr = [];
       if(key!=="" && key in tags){
-        resultArr.push(<blockquote key="block"><i>{this.state.selectTag}</i> 类型共有 {tags[key].length} 篇文章</blockquote>)
+        resultArr.push(<blockquote  style={{fontSize:"1.5rem"}}key="block"><i style={{color:'rgb(62, 134, 147)'}}>{this.state.selectTag}</i> 标签共有 {tags[key].length} 篇文章</blockquote>)
         for(var i in tags[key]){
           var value = tags[key][i].replace(/.md/,"");
 
@@ -37,6 +37,7 @@ class Tags extends React.Component{
       }
       return  (<div>
                 <div id="worldCloudCanvas" ref="canvas"></div>
+                <div style={{color:"#999",fontSize:"0.8rem",textAlign:'center'}}>点击上方标签词查看对应文章</div>
                 <div id="tagRelatedArt">
                   {resultArr}
                 </div>

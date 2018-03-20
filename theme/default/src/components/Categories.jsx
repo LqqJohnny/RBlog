@@ -15,6 +15,9 @@ export default class Categories extends Component{
 
     var treeView = [];
     var cates= this.state.cates;
+    if(JSON.stringify(cates) == "{}"){
+      return <div style={{textAlign:'center',marginTop:"15rem"}}>抱歉，暂无任何分类</div>
+    }
     for(var key in cates){
       var cate_item = cates[key];
       var cate_item_children = [];
@@ -34,7 +37,7 @@ export default class Categories extends Component{
 
     }
     return <div className="categories_tree">
-              <ul calssName="cate_list_first">
+              <ul className="cate_list_first">
                 {treeView}
               </ul>
             </div>

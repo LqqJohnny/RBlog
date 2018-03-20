@@ -1,6 +1,8 @@
 #worldCloudCanvas{
-  width:80rem;
+  width:67rem;
   height:25rem;
+  border-bottom: 1px solid rgb(62, 134, 147);
+  margin-bottom: 1rem;
 }
 #worldCloudCanvas span{
   cursor: pointer;
