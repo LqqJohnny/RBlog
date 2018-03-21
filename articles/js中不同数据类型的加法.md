@@ -2,9 +2,8 @@
 title: js中不同数据类型的加法
 date: 2017-09-27 17:15
 tags: [js,数据类型]
+categories: kk
 ---
-<!-- deleteAbove -->
---------
 
 ### 前言
 在js 中 有5中基础类型 undefined null boolean number string  和一种引用类型 object
