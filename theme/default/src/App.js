@@ -31,7 +31,7 @@ class App extends Component {
 
         {/* 中间内容 */}
         <Router>
-            <div style={{'marginBottom':'8rem'}}>
+            <div style={{'marginBottom':'8rem',"paddingLeft":"5rem"}}>
                 <Route exact path="/" component={ArticleList}/>
                 <Route exact path="/detail/:id" component={ArticleDetail}/>
                 <Route exact path="/tags" component={Tags}/>

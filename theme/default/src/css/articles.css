@@ -22,3 +22,34 @@
 .articleDetail code{
   font-size: 1rem;
 }
+.articleDetail .articleTitle{
+  height:2.3rem;
+  color:rgb(62, 134, 147);
+  font-size: 2rem;
+  line-height: 2rem;
+  border-bottom:1px dashed rgb(62, 134, 147);
+}
+.articleDetail span{
+  display: inline-block;
+  padding: 0 20px;
+  position: relative;
+
+}
+.articleDetail .articleInfo span:before{
+  content:"";
+  position: absolute;
+  width:16px;
+  height: 16px;
+  left:0px;
+  top:4px;
+
+}
+.articleDetail span.time:before{
+    background: url('../img/time.png')
+}
+.articleDetail span.category:before{
+    background: url('../img/category.png')
+}
+.articleDetail span.tags:before{
+    background: url('../img/tag.png')
+}

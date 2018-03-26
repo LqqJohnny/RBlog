@@ -24,6 +24,12 @@ class ArticleDetail extends React.Component{
 
     return (
       <div className="articleDetail">
+          <p className="articleTitle">{this.state.articleInfo.title}</p>
+          <div className="articleInfo">
+            <span className="time">{this.state.articleInfo.date.slice(0,10)}</span>
+            <span className="category">{this.state.articleInfo.categories}</span>
+            <span className="tags">{this.state.articleInfo.tags || "无标签"}</span>
+          </div>
           <ReactMarkdown source={this.state.articleInfo.content} escapeHtml={false} ></ReactMarkdown>
           <pre className="cow">
                                 &nbsp;&nbsp;(__)<br />
